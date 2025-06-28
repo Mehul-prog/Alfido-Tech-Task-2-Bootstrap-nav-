@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desi Veg Delights</title>
+  <link rel="stylesheet" href="nav1.1.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="time-bar" id="timeBar"></div>
+
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNavbar">
+    <div class="container">
+   <a class="navbar-brand" href="#home">
+  <img src="logo1.png" alt="Logo" height="55" width ="55" class="d-inline-block align-text-top">
+  </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link nav-hover" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link nav-hover" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link nav-hover" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link nav-hover" href="#specials">Desi Specials</a></li>
+          <li class="nav-item"><a class="nav-link nav-hover" href="#contact">Contact</a></li>
+        </ul>
+        <button class="btn btn-outline-light ms-3 cart-hover" data-bs-toggle="modal" data-bs-target="#cartModal">
+          🛒 Cart <span class="badge bg-light text-dark" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="section text-center" style="background-image: url('bg.jpg'); background-size: cover; background-position: center; color: white;">
+    <div class="container">
+      <h1 class="section-title glow-text"><u><b>Welcome to Desi Veg Delights</b></u></h1>
+  </section>
+
+  <div class="section-divider">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path fill="#ff9933" d="M0,64L1440,0L1440,160L0,160Z"></path>
+    </svg>
+  </div>
+
+  <section id="about" class="section">
+    <div class="container text-center">
+      <h2 class="section-title glow-text"><u><b>About Us</b></u></h2>
+      <p class="hover-scale">Desi Veg Delights was born from a deep passion to preserve and celebrate the rich legacy of authentic Indian vegetarian cuisine. Inspired by timeless family traditions and the vibrant diversity of regional flavors, we craft every meal with love, purity, and a commitment to heritage. Our chefs go beyond cooking — they blend handpicked spices with heartfelt stories, transforming each dish into an immersive cultural experience. With every bite, you taste not just food, but the essence of Indian roots, rituals, and warmth. At Desi Veg Delights, we serve more than meals — we serve memories, tradition, and the true spirit of vegetarian India.</p>
+    </div>
+  </section>
+
+  <div class="section-divider">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path fill="#e67e22" d="M0,64L1440,0L1440,160L0,160Z"></path>
+    </svg>
+  </div>
+
+  <section id="menu" class="section">
+    <div class="container text-center">
+      <h2 class="section-title glow-text"><u><b>Our Menu</b></u></h2>
+      <div class="carousel-gallery-wrapper">
+        <div class="carousel-gallery" id="menuItems"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path fill="#d35400" d="M0,64L1440,0L1440,160L0,160Z"></path>
+    </svg>
+  </div>
+
+  <section id="specials" class="section">
+    <div class="container text-center">
+      <h2 class="section-title glow-text"><u><b>Desi Specials – A Taste of Every Festival</b></u></h2>
+      <p class="hover-blur">From the golden harvest of Pongal to the sparkling lights of Diwali, our Desi Specials are a soulful journey through India’s most cherished festivals. Each season brings its own story, and we tell it with food — the creamy warmth of Til Khichdi for Makar Sankranti, the melt-in-your-mouth Rakhi sweets, the sattvik flavors of Navratri, and the festive indulgence of Diwali mithai.
+
+      At Desi Veg Delights, we don’t just serve meals — we serve memories, wrapped in tradition and bursting with festive flavor. Join us as we celebrate India’s rich cultural calendar, one delicious bite at a time.
+
+</p>
+    </div>
+  </section>
+
+  <div class="section-divider">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path fill="#c0392b" d="M0,64L1440,0L1440,160L0,160Z"></path>
+    </svg>
+  </div>
+
+  <section id="contact" class="section">
+    <div class="container text-center">
+      <h2 class="section-title glow-text"><u><b>Contact Us</b></u></h2>
+      <p class="hover-fade">hello@desivegdelights.in<br>📞 +91-9999911111<br>📍 3k Bhram Bazar, Chandausi, Uttar Pradesh</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Desi Veg Delights. All rights reserved.</p>
+  </footer>
+
+  <div class="modal fade" id="cartModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Your Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" id="cartItems"></div>
+        <div class="modal-footer">
+          <h5 class="me-auto">Total: ₹<span id="cartTotal">0</span></h5>
+          <button class="btn btn-success glow-button">Proceed to Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="dishModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="dishModalTitle"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="dishModalImage" class="img-fluid mb-3" style="max-height: 300px;" />
+          <p id="dishModalDescription" class="mb-3"></p>
+          <h5>Price: ₹<span id="dishModalPrice"></span></h5>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-success" id="addToCartFromModal">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
